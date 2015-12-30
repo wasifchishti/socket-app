@@ -2,21 +2,34 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	<title>Socket.io App</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-	<a href="/index.html">Change Settings</a>
-
-	<h1 class="room-title"></h1>
-	<div class="messages">
-		<!-- messages end up here -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row"><br/>
+					<a href="/index.html">Change Settings</a>
+					<h1 class="room-title"></h1>
+					<div class="messages">
+						<!-- messages end up here -->
+					</div>
+				</div>
+				<div class="row">
+					<form action="" id="message-form">
+						<div class="form-group">
+							<label for="message">Message:</label>
+							<input type="text" name="message" id="message" class="form-control" required/>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary" value="Send" />
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<form action="" id="message-form">
-		<input type="text" name="message" id="message" />
-		<input type="submit" />
-	</form>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
