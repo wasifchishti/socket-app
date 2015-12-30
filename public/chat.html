@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Socket.io App</title>
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/styles.css">
+    <meta charset="utf-8">
+    <title>Socket.io App</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 col-md-offset-3 well">
-				<a href="/index.html">Change Settings</a>
-				<h1 class="room-title"></h1>
-				<ul class="messages list-group">
-					<!-- messages end up here -->
-				</ul>
-			</ul>
-			<form action="" id="message-form">
-				<div class="form-group">
-					<label for="message">Message:</label>
-					<div class="input-group">
-						<span class="input-group-addon">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3 well space-top">
+                <a href="/index.html">Change Settings</a>
+
+                <h1 class="room-title text-center"></h1>
+
+                <ul class="messages list-group">
+                    <!-- messages end up here -->
+                </ul>
+                <form action="" id="message-form">
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">
 							<i class="glyphicon glyphicon glyphicon-comment"></i>
 						</span>
-						<input type="text" name="message" id="message" class="form-control" required/>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" class="btn btn-primary btn-block" value="Send" />
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
-<script src="/js/QueryParams.js"></script>
-<script src="/js/app.js"></script>
+                            <input type="text" name="message" id="message" class="form-control" required/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btn btn-default btn-block" value="Send" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdn.socket.io/socket.io-1.3.7.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="/js/QueryParams.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 </html>
